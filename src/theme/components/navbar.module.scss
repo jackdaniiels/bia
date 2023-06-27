@@ -1,0 +1,25 @@
+@import '@/theme/mixins/shadow.mixin.scss';
+@import '@/theme/variables.scss';
+
+.nav {
+    height: 85.5px;
+    background-color: $tertiaryligth;
+    color: $tertiarydark;
+    padding-left: 80.5px;
+    padding-right: 80.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    @include shadow;
+}
+
+.nav[data-theme='dark'] {
+    background-color: $primarydark;
+    color: $tertiaryligth;
+}

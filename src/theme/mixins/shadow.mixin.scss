@@ -1,0 +1,13 @@
+@import '@/theme/variables';
+
+@mixin shadow {
+    -webkit-box-shadow: -3 0.5rem 1rem $tertiaryligth;
+    -moz-box-shadow: -3 0.5rem 1rem $tertiaryligth;
+    box-shadow: -3 0.5rem 1rem $tertiaryligth;
+}
+
+@mixin shadow {
+    -webkit-box-shadow: -3 0.5rem 1rem $tertiarydark;
+    -moz-box-shadow: -3 0.5rem 1rem $tertiarydark;
+    box-shadow: -3 0.5rem 1rem $tertiarydark;
+}

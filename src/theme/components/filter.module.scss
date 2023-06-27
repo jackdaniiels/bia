@@ -1,0 +1,33 @@
+@import '@/theme/mixins/input.mixin';
+@import '@/theme/variables.scss';
+
+
+.filterContainer {
+    :nth-child(2) {
+        position: relative;
+        right: 35px;
+        height: 12px;
+        color: $tertiarydark;
+    }
+}
+
+.inputFilter {
+    cursor: pointer;
+    @include input;
+    margin-left: 12px;;
+    padding-left: 1rem;
+    width: 200px;
+    appearance: none;
+    background-color: $tertiaryligth;
+}
+
+.filterContainer[data-theme='dark'] {
+    :nth-child(2) {
+        color: $tertiaryligth;
+    }
+}
+
+.inputFilter[data-theme='dark'] {
+    background-color: $primarydark;
+    color: $tertiaryligth;
+}

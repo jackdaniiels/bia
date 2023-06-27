@@ -1,0 +1,1 @@
+export const regionsList: string[] = ['Africa', 'Asia', 'America', 'Europe', 'Oceania'];

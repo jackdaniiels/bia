@@ -1,0 +1,11 @@
+$primarydark: hsl(209, 23%, 22%);
+$secondarydark: hsl(207, 26%, 17%);
+$tertiarydark: hsl(200, 15%, 8%);
+$primaryligth: hsl(0, 0%, 52%);
+$secondaryligth: hsl(0, 0%, 98%);
+$tertiaryligth: hsl(0, 0%, 100%);
+
+body.dark {
+    color: red !important;
+    background-color: red !important;
+}

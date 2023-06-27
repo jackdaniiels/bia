@@ -1,0 +1,23 @@
+@import '@/theme/variables.scss';
+
+.btnTransparent {
+    background-color: transparent;
+    border-color: transparent;
+    color: $tertiarydark;
+    font-weight: 300;
+    cursor: pointer;
+
+    :nth-child(1) {
+        margin-right: .3rem;
+        height: 14px;
+    }
+
+    &:hover {
+        color: darken($color: #5b5b5b, $amount: 0);
+        border-color: transparent;
+    }
+}
+
+.btnTransparent[data-theme='dark'] {
+    color: $tertiaryligth;
+}

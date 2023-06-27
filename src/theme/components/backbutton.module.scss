@@ -1,0 +1,27 @@
+@import '@/theme/mixins/shadow.mixin.scss';
+@import '@/theme/variables.scss';
+
+
+.backButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 134px;
+    height: 39px;
+    border-radius: 6px;
+    background-color: $tertiaryligth;
+    border: none;
+    @include shadow;
+
+    :nth-child(1) {
+        margin-right: 1rem;
+        height: 12px;
+    }
+}
+
+
+.backButton[data-theme='dark'] {
+    background-color: $primarydark;
+    color: $tertiaryligth;
+}

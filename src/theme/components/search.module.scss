@@ -1,0 +1,29 @@
+@import '@/theme/mixins/input.mixin';
+@import '@/theme/variables.scss';
+
+.formSearch {
+    :first-child {
+        position: relative;
+        left: 35px;
+        height: 14px;
+        color: $tertiarydark;
+    }
+}
+
+.inputSearch {
+    padding-left: 3rem;
+    @include input;
+    width: 250px !important;
+    background-color: $tertiaryligth;
+}
+
+.formSearch[data-theme='dark'] {
+    :first-child {
+        color: $tertiaryligth;
+    }
+}
+
+.inputSearch[data-theme='dark'] {
+    background-color: $primarydark;
+    color: $tertiaryligth;
+}

@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+:root {
+  --background: white;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+
+body.dark {
+
+  .nav {
+    background-color: red !important;
+    color: red !important;
+}
+  #__next {
+     .nav {
+         background-color: red !important;
+         color: red !important;
+     }
+  }
+ }
+

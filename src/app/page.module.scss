@@ -1,0 +1,50 @@
+@import '@/theme/variables.scss';
+@import '@/theme/mixins/transitions.mixin.scss';
+
+.main {
+  min-height: 100vh;
+  background-color:$secondaryligth;
+}
+
+.main[data-theme='dark'] {
+  background-color: $secondarydark;
+  @include regular-transition();
+}
+
+.content {
+  min-height: 100vh;
+  padding: 80.5px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
+  grid-gap: 40px;
+  align-items: center;
+  justify-items: center;
+  padding: 40px 80.5px 80.5px 80.5px;
+}
+
+.backButtonContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 76.5px 80.5px 30px 80.5px;
+}
+
+.actionsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40.5px 80.5px 0px 80.5px;
+}
+
+.detailContainer {
+  padding: 40px 80.5px 80.5px 80.5px;
+  display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  align-items: center;
+  justify-content: center;
+}
