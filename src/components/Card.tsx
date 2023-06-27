@@ -7,11 +7,11 @@ import { darkmodeContext } from '@/context/darkmode';
 
 export const Card = (props: any) => {
   const darkmode = useContext(darkmodeContext);
-  const { flags, capital, region, name, population, ccn3 } = props;
+  const { flags, capital, region, name, population } = props;
   const router = useRouter();
 
   const onClick = () => {
-    router.push(`/country/${ccn3}`);
+    router.push(`/country/${name.common}`);
   };
 
 

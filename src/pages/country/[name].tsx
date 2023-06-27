@@ -45,13 +45,13 @@ import { countryCodes } from '@/utils/countryCodes';
 
 
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
-    const codes = countryCodes.map((code) => `${code}`);
+    const codes = countryCodes.map((countryName) => `${countryName}`);
 
     return {
-        paths: codes.map(countryCode => (
+        paths: codes.map(countryName => (
             {
                 params: {
-                    name: countryCode,
+                    name: countryName,
                     data: []
                 }
             }
@@ -64,7 +64,7 @@ export const getStaticPaths: GetStaticPaths = async (ctx) => {
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { name } = ctx.params as any;
     try {
-        const res = await fetch(`https://restcountries.com/v3.1/alpha/${name}`);
+        const res = await fetch(`https://restcountries.com/v3.1/name/${name}`);
         const country: CountryInterface[] = await res.json();
 
         return {
